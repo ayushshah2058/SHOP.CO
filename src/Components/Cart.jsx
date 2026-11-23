@@ -6,10 +6,10 @@ export const Cart = () => {
   return (
     <>
     <Navbar/>
-    <section className='sm:mx-16 my-6'>
+    <section className='mx-8 md:mx-12 sm:mx-16 my-6'>
 
     <h1 className='font-extrabold text-4xl mb-4'>YOUR CART</h1>
-    <div className='grid grid-cols-5 gap-4'>
+    <div className='grid grid-cols-1 md:grid-cols-5 sm:gap-4 gap-y-4'>
         <div className=' col-span-3 p-4 border border-gray-400 rounded-3xl'>
             <Items/>
             <hr className='border-gray-400 my-4'/>
@@ -24,9 +24,9 @@ export const Cart = () => {
             <div className='flex justify-between text-lg mb-2'><p className='text-gray-400'>Delivery Fee</p><p className='font-bold'>$13</p></div>
             <hr className='border-gray-400 my-4'/>
             <div className='flex justify-between text-lg mb-4'><p className='text-black font-bold text-2xl'>Total</p><p className='font-bold'>$467</p></div>
-            <div className='flex justify-between gap-2 mb-4'>
-                <input type="text" className=' flex-2 px-8 py-2 bg-gray-300 rounded-3xl' placeholder='Promo code'></input>
-                <a href='' className=' px-8 py-2 bg-black text-white rounded-3xl' placeholder='Promo code'>Apply</a>
+            <div className='flex flex-wrap justify-between gap-2 my-4'>
+                <input type="text" className=' flex-2 px-2 md:px-4 lg:px-8 py-2 bg-gray-300 rounded-3xl' placeholder='Promo code'></input>
+                <a href='' className=' px-8 py-2 bg-black text-white rounded-3xl' >Apply</a>
             </div>
                 <p href='' className='px-8 py-2 bg-black text-white rounded-3xl' placeholder='Promo code'>Go to Checkout</p>
         </div>

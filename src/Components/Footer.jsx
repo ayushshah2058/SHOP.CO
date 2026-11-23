@@ -5,8 +5,8 @@ export const Footer = () => {
     <>
     <div className="bg-gray-200 py-4 mt-8">
 
-    <div className="grid grid-cols-5 mx-16 my-8 gap-8 justify-between ">
-        <div >
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mx-16 my-8 gap-8 justify-around ">
+        <div className="md:col-span-1 col-span-2">
             <h1 className="text-2xl font-extrabold mb-2">SHOP.CO</h1>
             <p className="text-sm/6 font-extralight text-gray-800">We have clothes that suits your style and which you’re proud to wear. From women to men.</p>
         </div>

@@ -8,9 +8,9 @@ export const Productlist = () => {
   return (
    <>
    <Navbar/>
-    <main className='mx-16 flex gap-4'>
+    <main className='mx-16  grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
 
-      <div className="left-sidebar w-1/4  py-2 px-6 border border-gray-400 rounded-3xl">
+      <div className="left-sidebar col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-1 w-full  py-2 px-6 border border-gray-400 rounded-3xl">
         <div className='flex items-center justify-between my-4'>
           <h4 className='text-xl font-bold'>Filters</h4>
           <GiSettingsKnobs className='text-gray-500'/>
@@ -73,7 +73,7 @@ export const Productlist = () => {
          </div>
       </div>
 
-      <section className=" grid grid-cols-3 px-4 gap-4 place-items-center">
+      <section className=" grid col-span-2 lg:col-span-grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-4 gap-4 justify-center "> 
         <div className="">
           <img className="rounded-2xl object-cover size-80" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEuSu5OE7a3HeSy2ie1TLP9Gw9coutbiCoLKykjowA9ypsII-pvHU6bPr_&s=10" alt="" />
           <h1 className="text-xl font-bold mt-2">Gradient Graphics T-Shirt</h1>
